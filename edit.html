@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main Page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/sitegeneral.css">
+<link rel="stylesheet" href="css/sitehat.css">
+<link rel="stylesheet" href="css/editpage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="topnav">
+    <a class = "title" href="index.html">qJournal</a>
+    <div class="topnav-right">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+
+  <!--Main-->
+  <div class = "main">
+    <h1>&nbsp;Edit Profile:</h1>
+    <div class = "info-field">
+      <!--<div class = "profilepic">
+        <img class= "current-profilepic" src="images/easf.png">
+        <form action="/action_page.php">
+          <input type="file" id="myfile" name="myfile" placeholder="Choose New Picture"><br><br>
+          <input type="submit">
+        </form>
+      </div>-->
+      <div class = "row">
+        <div class = "info">
+          <h2>Name: User</h2>
+        </div>
+        <div class = "changeinfo">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Enter New Username" name="changeusername">
+              <button type="submit">Save</button>
+            </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "info">
+          <h2>Nick: @demoUser</h2>
+        </div>
+        <div class = "changeinfo">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Enter New Nickname" name="changenickname">
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "info">
+          <h2>About Yourself: Lorem ipsum dolor sit amet</h2>
+        </div>
+        <div class = "changeinfo">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Enter New Description" name="changedescription">
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <h1><br>&nbsp;Connect To Other Social Media:</h1>
+    <div class="info-field">
+    </div>
+
+    <h1><br>&nbsp;Edit Login Data:</h1>
+    <div class = "info-field">
+      <div class = "row">
+        <div class = "logindata">
+          <h2>Email: u********.com</h2>
+        </div>
+        <div class = "changelogindata">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Enter New Email Address" name="changeemail">
+            <input type="text" placeholder="Confirm New Email Address" name="confirmemail">
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "logindata">
+          <h2>Password: **********</h2>
+        </div>
+        <div class = "changelogindata">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Enter New Password" name="changepassword">
+            <input type="text" placeholder="Confirm New Password" name="confirmpassword">
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <p>©Andrii Derevainnyi, KN-208<br>
+    All Right Reserved</p>
+  </div>
+
+</body>
+</html>

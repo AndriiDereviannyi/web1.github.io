@@ -1,0 +1,118 @@
+.info-field {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background: white;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  color: black;
+  text-decoration: none;
+}
+
+.info {
+  padding: 6px;
+  flex: 50%;
+  border-right: 3px solid black;
+}
+
+.changeinfo {
+  flex: 50%;
+  margin: auto;
+}
+
+.changeinfo input[type=text] {
+  width: 70%;
+  margin: 4px;
+  font-size: 24px;
+  border: 2px solid white;
+  outline: none;
+}
+
+.changeinfo button {
+  float: right;
+  height: 100%;
+  padding: 3px;
+  margin: 4px;
+  margin-right: 16px;
+  background: #333;
+  font-size: 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.changeinfo
+ button:hover {
+  background: #f2f2f2;
+  color: black;
+}
+
+.logindata {
+  padding: 6px;
+  flex: 50%;
+  border-right: 3px solid black;
+}
+
+.changelogindata {
+  flex: 50%;
+  margin: auto;
+}
+
+.changelogindata input[type=text] {
+  width: 70%;
+  margin: 4px;
+  font-size: 24px;
+  border: 2px solid white;
+  outline: none;
+}
+
+.changelogindata button {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  margin: 4px;
+  margin-right: 16px;
+  background: #333;
+  font-size: 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.changelogindata
+ button:hover {
+  background: #f2f2f2;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .info {
+    border-right: none;
+    border-top: 2px solid black;
+  }
+
+  .changeinfo {
+    width: 100%;
+    flex: 50%;
+    margin: auto;
+  }
+
+  .logindata {
+    border-right: none;
+    border-top: 2px solid black;
+  }
+
+  .changelogindata {
+    width: 100%;
+    flex: 50%;
+    margin: auto;
+  }
+}

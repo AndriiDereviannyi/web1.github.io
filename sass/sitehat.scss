@@ -1,0 +1,79 @@
+@media screen and (min-width: 701px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 80px;
+  }
+
+  .topnav a.title {
+    padding-top: 21px;
+    font-size: 38px;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .topnav-right {
+    padding: 8px 20px;
+    float: right;
+  }
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav-right a{
+    margin: auto;
+    width: 150px;
+}
+
+.topnav-right a:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .topnav a.title {
+    width: 100%;
+    //padding-top: 21px;
+    font-size: 30px;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .topnav-right {
+    width: 100%;
+    padding: 5px 20px;
+    float: right;
+  }
+
+  .topnav-right a{
+    width: 33.33%;
+  }
+}
