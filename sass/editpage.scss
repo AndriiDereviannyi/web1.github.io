@@ -1,6 +1,11 @@
+.main {
+  height: 1210px;
+}
+
+//Basic layout of areas
 .info-field {
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   float: left;
   width: 100%;
   padding: 20px;
@@ -13,6 +18,38 @@
   text-decoration: none;
 }
 
+//profile picture styles
+.profilepic {
+  height: 200px;
+  width: 100%;
+  border-bottom: 3px solid black;
+  margin-bottom: 10px;
+}
+
+.current-profilepic {
+  float: left;
+  width: 30%;
+  height: 150px;
+  text-align: center;
+}
+
+.current-profilepic img{
+  height: 100%;
+  border-radius: 10px;
+}
+
+.changeprofilepic {
+  text-align: center;
+  width: 70%;
+  float: right;
+  padding-left: 30px;
+}
+
+.changeprofilepic-select {
+  padding-top: 25px;
+}
+
+//user info styles
 .info {
   padding: 6px;
   flex: 50%;
@@ -28,7 +65,7 @@
   width: 70%;
   margin: 4px;
   font-size: 24px;
-  border: 2px solid white;
+  border: 3px solid white;
   outline: none;
 }
 
@@ -45,14 +82,69 @@
   cursor: pointer;
 }
 
-.changeinfo
- button:hover {
+.changeinfo button:hover {
   background: #f2f2f2;
   color: black;
 }
 
+//connect to social media styles
+.media-field {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background: white;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.media-field input, .btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.media-field input:hover, .btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  margin-left: auto;
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
 .logindata {
-  padding: 6px;
+  padding: 47px 6px;
+  flex: 50%;
+  border-right: 3px solid black;
+}
+
+.logindata-bottom {
+  padding: 47px 6px;
   flex: 50%;
   border-right: 3px solid black;
 }
@@ -66,15 +158,14 @@
   width: 70%;
   margin: 4px;
   font-size: 24px;
-  border: 2px solid white;
+  border: 3px solid white;
   outline: none;
 }
 
 .changelogindata button {
   width: 100%;
-  height: 100%;
   padding: 3px;
-  margin: 4px;
+  margin: 3px;
   margin-right: 16px;
   background: #333;
   font-size: 24px;
@@ -83,13 +174,49 @@
   cursor: pointer;
 }
 
-.changelogindata
- button:hover {
+.changelogindata button:hover {
   background: #f2f2f2;
   color: black;
 }
 
+.button-area {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.logout {
+  background: #333;
+  color: #FFF;
+  padding: 4px 0;
+  width: 50%;
+  float: left;
+  border-right: 5px solid #FFF;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.deleteacc {
+  background: #333;
+  color: #FFF;
+  padding: 4px 0;
+  width: 50%;
+  float: right;
+  border-left: 5px solid #FFF;
+  text-align: center;
+
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
+
+  .main {
+    height: 1370px;
+  }
+
   .row {
     flex-direction: column;
   }
@@ -99,13 +226,44 @@
     border-top: 2px solid black;
   }
 
+  .profilepic {
+    height: 220px;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .current-profilepic {
+    float: left;
+    width: 40%;
+    text-align: center;
+  }
+
+  .changeprofilepic {
+    text-align: center;
+    width: 60%;
+    float: right;
+    padding-left: 10px;
+  }
+
   .changeinfo {
     width: 100%;
     flex: 50%;
     margin: auto;
   }
 
+  .col {
+      width: 100%;
+      margin-top: 0;
+    }
+
   .logindata {
+    padding: 6px;
+    border-right: none;
+  }
+
+  .logindata-bottom {
+    margin-top: 10px;
+    padding: 6px;
     border-right: none;
     border-top: 2px solid black;
   }
@@ -114,5 +272,30 @@
     width: 100%;
     flex: 50%;
     margin: auto;
+  }
+
+  .changelogindata button {
+    margin-left: 0px;
+  }
+
+  .button-area {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .logout {
+    width: 100%;
+    border-right: 0px solid #FFF;
+    margin-bottom: 15px;
+  }
+
+  .deleteacc {
+    width: 100%;
+    border-left: 0px solid #FFF;
+  }
+
+  .footer {
+    margin-top: 100px;
   }
 }

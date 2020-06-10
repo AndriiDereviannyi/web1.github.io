@@ -23,13 +23,23 @@
   <div class = "main">
     <h1>&nbsp;Edit Profile:</h1>
     <div class = "info-field">
-      <!--<div class = "profilepic">
-        <img class= "current-profilepic" src="images/easf.png">
-        <form action="/action_page.php">
-          <input type="file" id="myfile" name="myfile" placeholder="Choose New Picture"><br><br>
-          <input type="submit">
-        </form>
-      </div>-->
+      <div class = "profilepic">
+        <div class = "current-profilepic">
+          <h2>Your Profile Picture:</h2>
+          <img src="images/easf.png">
+        </div>
+        <div class="changeprofilepic">
+          <h2>Change Profile Picture:<br></h2>
+          <div class = "changeprofilepic-select">
+            <form action="/action_page.php">
+              <label for="myfile"><h2>New Profile Picture:<br><h2></label>
+              <input type="file" id="myfile" name="myfile" placeholder="Choose New Picture">
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class = "row">
         <div class = "info">
           <h2>Name: User</h2>
@@ -41,6 +51,7 @@
             </form>
         </div>
       </div>
+
       <div class = "row">
         <div class = "info">
           <h2>Nick: @demoUser</h2>
@@ -52,6 +63,7 @@
           </form>
         </div>
       </div>
+
       <div class = "row">
         <div class = "info">
           <h2>About Yourself: Lorem ipsum dolor sit amet</h2>
@@ -66,7 +78,18 @@
     </div>
 
     <h1><br>&nbsp;Connect To Other Social Media:</h1>
-    <div class="info-field">
+    <div class="media-field">
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Connect to Facebook
+        </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Connect to Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+        </i> Connect to Google+
+        </a>
+      </div>
     </div>
 
     <h1><br>&nbsp;Edit Login Data:</h1>
@@ -83,8 +106,9 @@
           </form>
         </div>
       </div>
+
       <div class = "row">
-        <div class = "logindata">
+        <div class = "logindata-bottom">
           <h2>Password: **********</h2>
         </div>
         <div class = "changelogindata">
@@ -93,6 +117,19 @@
             <input type="text" placeholder="Confirm New Password" name="confirmpassword">
             <button type="submit">Save</button>
           </form>
+        </div>
+      </div>
+
+      <div class = "button-area">
+        <div class = "row">
+          <div class = "logout"; onclick="window.location='login.html';">
+            <h2>Log Out</h2>
+            <!--<a href = "login.html">Log Out of Account</a>-->
+          </div>
+          <div class = "deleteacc"; onclick="window.location='login.html';">
+            <h2>Delete Account</h2>
+            <!--<a href = "login.html">Delete the Account</a>-->
+          </div>
         </div>
       </div>
     </div>
