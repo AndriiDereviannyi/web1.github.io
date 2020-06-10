@@ -44,6 +44,7 @@
 /* style inputs and link buttons */
 input,
 .btn {
+  outline: none;
   width: 100%;
   padding: 12px;
   border: none;
@@ -120,6 +121,26 @@ input:hover,
   color: white;
 }
 
+.signup-memo {
+  padding-top: 10px;
+  width: 100%;
+  flex: 50%;
+  text-align: center;
+}
+
+.signup {
+  flex: 50%;
+  margin-top: 3px;
+  background: #333;
+  color: #FFF;
+  padding: 4px 0;
+  float: left;
+  text-align: center;
+  border: 3px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .main {
@@ -139,5 +160,9 @@ input:hover,
   .media-login {
     border-left: none;
     border-top: 2px solid #000;
+  }
+
+  .signup-memo {
+    padding-top: 3px;
   }
 }
