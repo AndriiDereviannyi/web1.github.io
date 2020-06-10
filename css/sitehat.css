@@ -28,8 +28,8 @@
   }
 }
 .topnav a.active {
-  background-color: white;
-  color: black;
+  background-color: #FFF;
+  color: #000;
 }
 
 .topnav-right a {
@@ -38,8 +38,8 @@
 }
 
 .topnav-right a:hover {
-  background-color: white;
-  color: black;
+  background-color: #FFF;
+  color: #000;
 }
 
 @media screen and (max-width: 700px) {
