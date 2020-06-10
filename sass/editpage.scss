@@ -27,21 +27,20 @@
 }
 
 .current-profilepic {
-  float: left;
-  width: 30%;
-  height: 150px;
+  //float: left;
+  flex: 30%;
   text-align: center;
 }
 
 .current-profilepic img{
-  height: 100%;
+  height: 150px;
   border-radius: 10px;
 }
 
 .changeprofilepic {
   text-align: center;
-  width: 70%;
-  float: right;
+  flex: 70%;
+  //float: right;
   padding-left: 30px;
 }
 
@@ -214,7 +213,7 @@
 @media screen and (max-width: 800px) {
 
   .main {
-    height: 1370px;
+    height: 1650px;
   }
 
   .row {
@@ -227,21 +226,21 @@
   }
 
   .profilepic {
-    height: 220px;
+    height: 300px;
     width: 100%;
     border-bottom: none;
   }
 
   .current-profilepic {
-    float: left;
-    width: 40%;
+    //float: left;
+    width: 100%;
     text-align: center;
   }
 
   .changeprofilepic {
     text-align: center;
-    width: 60%;
-    float: right;
+    width: 100%;
+    //float: right;
     padding-left: 10px;
   }
 
@@ -249,6 +248,16 @@
     width: 100%;
     flex: 50%;
     margin: auto;
+  }
+
+  .changeinfo input[type=text] {
+    width: 100%;
+  }
+
+  .changeinfo button {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
   }
 
   .col {

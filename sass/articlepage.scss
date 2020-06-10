@@ -35,9 +35,16 @@
     max-height: 100%;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 801px) {
   .main {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
